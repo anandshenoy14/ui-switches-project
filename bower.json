@@ -1,0 +1,25 @@
+{
+  "name": "ui-switches-project",
+  "homepage": "https://github.com/neolegolas14/ui-switches-project",
+  "authors": [
+    "neolegolas14 <aliens123456@gmail.com>"
+  ],
+  "description": "Switches for common use",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "node"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.3.1"
+  }
+}

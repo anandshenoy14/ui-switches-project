@@ -1,0 +1,332 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'gulp',
+1 verbose cli   'bower' ]
+2 info using npm@2.14.20
+3 info using node@v4.4.0
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'gulp', null ]
+7 verbose cache add spec gulp
+8 silly cache add args [ 'bower', null ]
+9 verbose cache add spec bower
+10 silly cache add parsed spec Result {
+10 silly cache add   raw: 'gulp',
+10 silly cache add   scope: null,
+10 silly cache add   name: 'gulp',
+10 silly cache add   rawSpec: '',
+10 silly cache add   spec: 'latest',
+10 silly cache add   type: 'tag' }
+11 silly addNamed gulp@latest
+12 verbose addNamed "latest" is being treated as a dist-tag for gulp
+13 info addNameTag [ 'gulp', 'latest' ]
+14 silly mapToRegistry name gulp
+15 silly mapToRegistry using default registry
+16 silly mapToRegistry registry https://registry.npmjs.org/
+17 silly mapToRegistry uri https://registry.npmjs.org/gulp
+18 verbose addNameTag registry:https://registry.npmjs.org/gulp not in flight; fetching
+19 silly cache add parsed spec Result {
+19 silly cache add   raw: 'bower',
+19 silly cache add   scope: null,
+19 silly cache add   name: 'bower',
+19 silly cache add   rawSpec: '',
+19 silly cache add   spec: 'latest',
+19 silly cache add   type: 'tag' }
+20 silly addNamed bower@latest
+21 verbose addNamed "latest" is being treated as a dist-tag for bower
+22 info addNameTag [ 'bower', 'latest' ]
+23 silly mapToRegistry name bower
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry uri https://registry.npmjs.org/bower
+27 verbose addNameTag registry:https://registry.npmjs.org/bower not in flight; fetching
+28 verbose request uri https://registry.npmjs.org/gulp
+29 verbose request no auth needed
+30 info attempt registry request try #1 at 1:12:38 PM
+31 verbose request id f32f3d3d868505ba
+32 http request GET https://registry.npmjs.org/gulp
+33 verbose request uri https://registry.npmjs.org/bower
+34 verbose request no auth needed
+35 info attempt registry request try #1 at 1:12:39 PM
+36 verbose etag "DZFJE0XFKS57MHQSFTG1KCAD8"
+37 http request GET https://registry.npmjs.org/bower
+38 http 304 https://registry.npmjs.org/bower
+39 verbose headers { date: 'Sat, 12 Mar 2016 21:12:39 GMT',
+39 verbose headers   via: '1.1 varnish',
+39 verbose headers   'cache-control': 'max-age=300',
+39 verbose headers   etag: '"DZFJE0XFKS57MHQSFTG1KCAD8"',
+39 verbose headers   age: '205',
+39 verbose headers   connection: 'keep-alive',
+39 verbose headers   'x-served-by': 'cache-sjc3120-SJC',
+39 verbose headers   'x-cache': 'HIT',
+39 verbose headers   'x-cache-hits': '4',
+39 verbose headers   'x-timer': 'S1457817159.117048,VS0,VE0',
+39 verbose headers   vary: 'Accept' }
+40 silly get cb [ 304,
+40 silly get   { date: 'Sat, 12 Mar 2016 21:12:39 GMT',
+40 silly get     via: '1.1 varnish',
+40 silly get     'cache-control': 'max-age=300',
+40 silly get     etag: '"DZFJE0XFKS57MHQSFTG1KCAD8"',
+40 silly get     age: '205',
+40 silly get     connection: 'keep-alive',
+40 silly get     'x-served-by': 'cache-sjc3120-SJC',
+40 silly get     'x-cache': 'HIT',
+40 silly get     'x-cache-hits': '4',
+40 silly get     'x-timer': 'S1457817159.117048,VS0,VE0',
+40 silly get     vary: 'Accept' } ]
+41 verbose etag https://registry.npmjs.org/bower from cache
+42 verbose get saving bower to /Users/anashenoy/.npm/registry.npmjs.org/bower/.cache.json
+43 verbose correctMkdir /Users/anashenoy/.npm correctMkdir not in flight; initializing
+44 silly addNameTag next cb for bower with tag latest
+45 silly addNamed bower@1.7.7
+46 verbose addNamed "1.7.7" is a plain semver version for bower
+47 silly cache afterAdd bower@1.7.7
+48 verbose afterAdd /Users/anashenoy/.npm/bower/1.7.7/package/package.json not in flight; writing
+49 verbose correctMkdir /Users/anashenoy/.npm correctMkdir not in flight; initializing
+50 verbose afterAdd /Users/anashenoy/.npm/bower/1.7.7/package/package.json written
+51 http 200 https://registry.npmjs.org/gulp
+52 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+52 verbose headers   etag: '"6DHUJFGAARE09IK4WH3NUM9ZT"',
+52 verbose headers   'content-type': 'application/json',
+52 verbose headers   'cache-control': 'max-age=300',
+52 verbose headers   'content-length': '113083',
+52 verbose headers   'accept-ranges': 'bytes',
+52 verbose headers   date: 'Sat, 12 Mar 2016 21:12:39 GMT',
+52 verbose headers   via: '1.1 varnish',
+52 verbose headers   age: '237',
+52 verbose headers   connection: 'keep-alive',
+52 verbose headers   'x-served-by': 'cache-sjc3129-SJC',
+52 verbose headers   'x-cache': 'HIT',
+52 verbose headers   'x-cache-hits': '2',
+52 verbose headers   'x-timer': 'S1457817159.116355,VS0,VE0',
+52 verbose headers   vary: 'Accept' }
+53 silly get cb [ 200,
+53 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+53 silly get     etag: '"6DHUJFGAARE09IK4WH3NUM9ZT"',
+53 silly get     'content-type': 'application/json',
+53 silly get     'cache-control': 'max-age=300',
+53 silly get     'content-length': '113083',
+53 silly get     'accept-ranges': 'bytes',
+53 silly get     date: 'Sat, 12 Mar 2016 21:12:39 GMT',
+53 silly get     via: '1.1 varnish',
+53 silly get     age: '237',
+53 silly get     connection: 'keep-alive',
+53 silly get     'x-served-by': 'cache-sjc3129-SJC',
+53 silly get     'x-cache': 'HIT',
+53 silly get     'x-cache-hits': '2',
+53 silly get     'x-timer': 'S1457817159.116355,VS0,VE0',
+53 silly get     vary: 'Accept' } ]
+54 verbose get saving gulp to /Users/anashenoy/.npm/registry.npmjs.org/gulp/.cache.json
+55 verbose correctMkdir /Users/anashenoy/.npm correctMkdir not in flight; initializing
+56 silly addNameTag next cb for gulp with tag latest
+57 silly addNamed gulp@3.9.1
+58 verbose addNamed "3.9.1" is a plain semver version for gulp
+59 silly mapToRegistry name gulp
+60 silly mapToRegistry using default registry
+61 silly mapToRegistry registry https://registry.npmjs.org/
+62 silly mapToRegistry uri https://registry.npmjs.org/gulp
+63 verbose addRemoteTarball https://registry.npmjs.org/gulp/-/gulp-3.9.1.tgz not in flight; adding
+64 verbose addRemoteTarball [ 'https://registry.npmjs.org/gulp/-/gulp-3.9.1.tgz',
+64 verbose addRemoteTarball   '571ce45928dd40af6514fc4011866016c13845b4' ]
+65 info retry fetch attempt 1 at 1:12:39 PM
+66 info attempt registry request try #1 at 1:12:39 PM
+67 http fetch GET https://registry.npmjs.org/gulp/-/gulp-3.9.1.tgz
+68 http fetch 200 https://registry.npmjs.org/gulp/-/gulp-3.9.1.tgz
+69 silly fetchAndShaCheck shasum 571ce45928dd40af6514fc4011866016c13845b4
+70 verbose addTmpTarball /var/folders/0y/rtrq1hqd7_b_k6pw181qvbc4392tbq/T/npm-28368-24a06d82/registry.npmjs.org/gulp/-/gulp-3.9.1.tgz not in flight; adding
+71 verbose addTmpTarball already have metadata; skipping unpack for gulp@3.9.1
+72 verbose correctMkdir /Users/anashenoy/.npm correctMkdir not in flight; initializing
+73 silly cache afterAdd gulp@3.9.1
+74 verbose afterAdd /Users/anashenoy/.npm/gulp/3.9.1/package/package.json not in flight; writing
+75 verbose correctMkdir /Users/anashenoy/.npm correctMkdir not in flight; initializing
+76 verbose afterAdd /Users/anashenoy/.npm/gulp/3.9.1/package/package.json written
+77 silly install resolved [ { name: 'bower',
+77 silly install resolved     version: '1.7.7',
+77 silly install resolved     description: 'The browser package manager',
+77 silly install resolved     author: { name: 'Twitter' },
+77 silly install resolved     license: 'MIT',
+77 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/bower/bower.git' },
+77 silly install resolved     main: 'lib',
+77 silly install resolved     bin: { bower: 'bin/bower' },
+77 silly install resolved     homepage: 'http://bower.io',
+77 silly install resolved     engines: { node: '>=0.10.0' },
+77 silly install resolved     keywords: [ 'bower' ],
+77 silly install resolved     files: [ 'bin', 'lib' ],
+77 silly install resolved     bugs: { url: 'https://github.com/bower/bower/issues' },
+77 silly install resolved     _id: 'bower@1.7.7',
+77 silly install resolved     scripts: {},
+77 silly install resolved     _shasum: '2fd7ff3ebdcba5a8ffcd84c397c8fdfe9f825f92',
+77 silly install resolved     _from: 'bower@latest',
+77 silly install resolved     _npmVersion: '3.5.3',
+77 silly install resolved     _nodeVersion: '4.1.1',
+77 silly install resolved     _npmUser: { name: 'sheerun', email: 'sheerun@sher.pl' },
+77 silly install resolved     dist:
+77 silly install resolved      { shasum: '2fd7ff3ebdcba5a8ffcd84c397c8fdfe9f825f92',
+77 silly install resolved        tarball: 'http://registry.npmjs.org/bower/-/bower-1.7.7.tgz' },
+77 silly install resolved     maintainers:
+77 silly install resolved      [ [Object],
+77 silly install resolved        [Object],
+77 silly install resolved        [Object],
+77 silly install resolved        [Object],
+77 silly install resolved        [Object],
+77 silly install resolved        [Object],
+77 silly install resolved        [Object] ],
+77 silly install resolved     directories: {},
+77 silly install resolved     _resolved: 'https://registry.npmjs.org/bower/-/bower-1.7.7.tgz',
+77 silly install resolved     readme: 'ERROR: No README data found!' },
+77 silly install resolved   { name: 'gulp',
+77 silly install resolved     description: 'The streaming build system',
+77 silly install resolved     version: '3.9.1',
+77 silly install resolved     homepage: 'http://gulpjs.com',
+77 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/gulpjs/gulp.git' },
+77 silly install resolved     author:
+77 silly install resolved      { name: 'Fractal',
+77 silly install resolved        email: 'contact@wearefractal.com',
+77 silly install resolved        url: 'http://wearefractal.com/' },
+77 silly install resolved     tags: [ 'build', 'stream', 'system', 'make', 'tool', 'asset', 'pipeline' ],
+77 silly install resolved     files: [ 'index.js', 'lib', 'bin', 'completion', 'gulp.1' ],
+77 silly install resolved     bin: { gulp: './bin/gulp.js' },
+77 silly install resolved     man: [ 'gulp.1' ],
+77 silly install resolved     dependencies:
+77 silly install resolved      { archy: '^1.0.0',
+77 silly install resolved        chalk: '^1.0.0',
+77 silly install resolved        deprecated: '^0.0.1',
+77 silly install resolved        'gulp-util': '^3.0.0',
+77 silly install resolved        interpret: '^1.0.0',
+77 silly install resolved        liftoff: '^2.1.0',
+77 silly install resolved        minimist: '^1.1.0',
+77 silly install resolved        orchestrator: '^0.3.0',
+77 silly install resolved        'pretty-hrtime': '^1.0.0',
+77 silly install resolved        semver: '^4.1.0',
+77 silly install resolved        tildify: '^1.0.0',
+77 silly install resolved        v8flags: '^2.0.2',
+77 silly install resolved        'vinyl-fs': '^0.3.0' },
+77 silly install resolved     devDependencies:
+77 silly install resolved      { coveralls: '^2.7.0',
+77 silly install resolved        eslint: '^1.7.3',
+77 silly install resolved        'eslint-config-gulp': '^2.0.0',
+77 silly install resolved        'graceful-fs': '^3.0.0',
+77 silly install resolved        istanbul: '^0.3.0',
+77 silly install resolved        jscs: '^2.3.5',
+77 silly install resolved        'jscs-preset-gulp': '^1.0.0',
+77 silly install resolved        'marked-man': '^0.1.3',
+77 silly install resolved        mkdirp: '^0.5.0',
+77 silly install resolved        mocha: '^2.0.1',
+77 silly install resolved        'mocha-lcov-reporter': '^0.0.1',
+77 silly install resolved        q: '^1.0.0',
+77 silly install resolved        rimraf: '^2.2.5',
+77 silly install resolved        should: '^5.0.1' },
+77 silly install resolved     scripts:
+77 silly install resolved      { prepublish: 'marked-man --name gulp docs/CLI.md > gulp.1',
+77 silly install resolved        lint: 'eslint . && jscs *.js bin/ lib/ test/',
+77 silly install resolved        pretest: 'npm run lint',
+77 silly install resolved        test: 'mocha --reporter spec',
+77 silly install resolved        coveralls: 'istanbul cover _mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage' },
+77 silly install resolved     engines: { node: '>= 0.9' },
+77 silly install resolved     license: 'MIT',
+77 silly install resolved     gitHead: '9c14e3a13a73a32e424f144d62566671b2fcdbed',
+77 silly install resolved     bugs: { url: 'https://github.com/gulpjs/gulp/issues' },
+77 silly install resolved     _id: 'gulp@3.9.1',
+77 silly install resolved     _shasum: '571ce45928dd40af6514fc4011866016c13845b4',
+77 silly install resolved     _from: 'gulp@latest',
+77 silly install resolved     _npmVersion: '2.14.14',
+77 silly install resolved     _nodeVersion: '0.10.41',
+77 silly install resolved     _npmUser: { name: 'phated', email: 'blaine@iceddev.com' },
+77 silly install resolved     maintainers: [ [Object], [Object] ],
+77 silly install resolved     dist:
+77 silly install resolved      { shasum: '571ce45928dd40af6514fc4011866016c13845b4',
+77 silly install resolved        tarball: 'http://registry.npmjs.org/gulp/-/gulp-3.9.1.tgz' },
+77 silly install resolved     _npmOperationalInternal:
+77 silly install resolved      { host: 'packages-6-west.internal.npmjs.com',
+77 silly install resolved        tmp: 'tmp/gulp-3.9.1.tgz_1454957415500_0.15343931876122952' },
+77 silly install resolved     directories: {},
+77 silly install resolved     _resolved: 'https://registry.npmjs.org/gulp/-/gulp-3.9.1.tgz' } ]
+78 info install bower@1.7.7 into /usr/local/lib
+79 info install gulp@3.9.1 into /usr/local/lib
+80 info installOne bower@1.7.7
+81 verbose installOne of bower to /usr/local/lib not in flight; installing
+82 verbose correctMkdir /Users/anashenoy/.npm/_locks correctMkdir not in flight; initializing
+83 info installOne gulp@3.9.1
+84 verbose installOne of gulp to /usr/local/lib not in flight; installing
+85 verbose correctMkdir /Users/anashenoy/.npm/_locks correctMkdir already in flight; waiting
+86 verbose lock using /Users/anashenoy/.npm/_locks/bower-e8debc5417026b57.lock for /usr/local/lib/node_modules/bower
+87 verbose lock using /Users/anashenoy/.npm/_locks/gulp-709d00e5d169ceb3.lock for /usr/local/lib/node_modules/gulp
+88 silly install write writing gulp 3.9.1 to /usr/local/lib/node_modules/gulp
+89 silly install write writing bower 1.7.7 to /usr/local/lib/node_modules/bower
+90 verbose unbuild lib/node_modules/gulp
+91 verbose unbuild lib/node_modules/bower
+92 silly gentlyRm /usr/local/lib/node_modules/gulp is being purged from base /usr/local
+93 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/gulp
+94 verbose tar unpack /Users/anashenoy/.npm/gulp/3.9.1/package.tgz
+95 verbose tar unpacking to /usr/local/lib/node_modules/gulp
+96 silly gentlyRm /usr/local/lib/node_modules/gulp is being purged
+97 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/gulp
+98 silly gunzTarPerm modes [ '755', '644' ]
+99 error tar.unpack untar error /Users/anashenoy/.npm/gulp/3.9.1/package.tgz
+100 info preuninstall bower@1.7.7
+101 verbose unlock done using /Users/anashenoy/.npm/_locks/gulp-709d00e5d169ceb3.lock for /usr/local/lib/node_modules/gulp
+102 info uninstall bower@1.7.7
+103 verbose unbuild rmStuff bower@1.7.7 from /usr/local/lib/node_modules
+104 silly gentlyRm /usr/local/bin/bower is being gently removed
+105 silly gentlyRm verifying /usr/local is an npm working directory
+106 silly gentlyRm containing path /usr/local is under npm's control, in /usr/local
+107 silly gentlyRm deletion target /usr/local/bin/bower is under /usr/local
+108 verbose gentlyRm vacuuming from /usr/local/bin/bower up to /usr/local
+109 silly vacuum-fs removing /usr/local/bin/bower
+110 verbose unlock done using /Users/anashenoy/.npm/_locks/bower-e8debc5417026b57.lock for /usr/local/lib/node_modules/bower
+111 verbose fstream_path /usr/local/lib/node_modules/gulp
+112 verbose fstream_type Directory
+113 verbose fstream_class DirWriter
+114 verbose stack Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/gulp'
+114 verbose stack     at Error (native)
+115 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25
+115 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53
+115 verbose fstream_stack FSReqWrap.oncomplete (fs.js:82:15)
+116 verbose cwd /Users/anashenoy/Documents/Git Projects/ui-switches-project
+117 error Darwin 14.3.0
+118 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "gulp" "bower"
+119 error node v4.4.0
+120 error npm  v2.14.20
+121 error path /usr/local/lib/node_modules/gulp
+122 error code EACCES
+123 error errno -13
+124 error syscall mkdir
+125 error Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/gulp'
+125 error     at Error (native)
+125 error  { [Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/gulp']
+125 error   errno: -13,
+125 error   code: 'EACCES',
+125 error   syscall: 'mkdir',
+125 error   path: '/usr/local/lib/node_modules/gulp',
+125 error   fstream_type: 'Directory',
+125 error   fstream_path: '/usr/local/lib/node_modules/gulp',
+125 error   fstream_class: 'DirWriter',
+125 error   fstream_stack:
+125 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25',
+125 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53',
+125 error      'FSReqWrap.oncomplete (fs.js:82:15)' ] }
+126 error Please try running this command again as root/Administrator.
+127 verbose exit [ -13, true ]
+128 verbose unbuild lib/node_modules/gulp
+129 silly gentlyRm /usr/local/lib/node_modules/gulp is being purged from base /usr/local
+130 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/gulp
+131 verbose unbuild lib/node_modules/bower
+132 info preuninstall bower@1.7.7
+133 info uninstall bower@1.7.7
+134 verbose unbuild rmStuff bower@1.7.7 from /usr/local/lib/node_modules
+135 silly gentlyRm /usr/local/bin/bower is being gently removed
+136 silly gentlyRm verifying /usr/local is an npm working directory
+137 silly gentlyRm containing path /usr/local is under npm's control, in /usr/local
+138 silly gentlyRm deletion target /usr/local/bin/bower is under /usr/local
+139 verbose gentlyRm vacuuming from /usr/local/bin/bower up to /usr/local
+140 silly vacuum-fs removing /usr/local/bin/bower
+141 error error rolling back Error: EACCES: permission denied, unlink '/usr/local/bin/bower'
+141 error error rolling back     at Error (native)
+141 error error rolling back  { [Error: EACCES: permission denied, unlink '/usr/local/bin/bower']
+141 error error rolling back   errno: -13,
+141 error error rolling back   code: 'EACCES',
+141 error error rolling back   syscall: 'unlink',
+141 error error rolling back   path: '/usr/local/bin/bower' }
