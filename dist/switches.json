@@ -1,0 +1,49 @@
+{
+  "switches" : [{
+    "name" : "VI VQ US PROD",
+    "optInUrl" : "http://go/vivqusoptin",
+    "optOutUrl" : "http://go/vivqusoptout",
+    "defaultState" : "optout"
+  },{
+    "name" : "VI VQ DE PROD",
+    "optInUrl" : "http://go/vivqdeoptin",
+    "optOutUrl" : "http://go/vivqdeoptout",
+    "defaultState" : "optout"
+  },
+  {
+    "name" : "VI VQ UK PROD",
+    "optInUrl" : "http://go/vivqukoptin",
+    "optOutUrl" : "http://go/vivqukoptout",
+    "defaultState" : "optout"
+  },
+  {
+    "name" : "VI VQ AU PROD",
+    "optInUrl" : "http://go/vivqauoptin",
+    "optOutUrl" : "http://go/vivqauoptout",
+    "defaultState" : "optout"
+  },
+  {
+    "name" : "VI VQ US QA",
+    "optInUrl" : "http://go/vivqusqaoptin",
+    "optOutUrl" : "http://go/vivqusqaoptout",
+    "defaultState" : "optout"
+  },{
+    "name" : "VI VQ DE QA",
+    "optInUrl" : "http://go/vivqdeqaoptin",
+    "optOutUrl" : "http://go/vivqdeqaoptout",
+    "defaultState" : "optout"
+  },
+  {
+    "name" : "VI VQ UK QA",
+    "optInUrl" : "http://go/vivqukqaoptin",
+    "optOutUrl" : "http://go/vivqukqaoptout",
+    "defaultState" : "optout"
+  },
+  {
+    "name" : "VI VQ AU QA",
+    "optInUrl" : "http://go/vivqauqaoptin",
+    "optOutUrl" : "http://go/vivqauqaoptout",
+    "defaultState" : "optout"
+  }
+]
+}
