@@ -20,18 +20,21 @@ window.init = function(){
     function createAllSwitches(switches){
         var switchContainerEl = $('.switchContainer');
         var switchStartHtml = "<div class='switch'>";
-        var switchEndHtml = "</div>";
-        //add switches
+        var switchEndHtml = "</div><div class='ui divider'></div>";
+        this.switches = switches;
+
         for(var i=0;i<switches.length;i++){
             var labelHtml = "<label class='switch-label'>"+switches[i].getName()+"</label>";
-            var checkboxDivHtml = "<div class='ui toggle checkbox switch-component switch_"+switches[i].getIndex()+"'><input type='checkbox' name='public'></div>"
+            var state = (switches[i].getDefaultState()==='optin')?'checked':'';
+            var checkboxDivHtml = "<div class='ui toggle checkbox switch-component switch_"+switches[i].getIndex()+"'><input type='checkbox' "+state+" data-index="+switches[i].getIndex()+" name='public'></div>"
             switchContainerEl.append(switchStartHtml + labelHtml + checkboxDivHtml + switchEndHtml);
             $('.switch_'+switches[i].getIndex()).checkbox({
               onChecked : function(){
-                window.open('http://go/vivqusoptin','_blank');
+                var self = this;
+                window.open(switches[$(this).attr('data-index')].getOptInUrl(),'_blank');
               },
               onUnchecked : function(){
-                window.open('http://go/vivqusoptout','_blank');
+                window.open(switches[$(this).attr('data-index')].getOptOutUrl(),'_blank');
               }
             });
         }
