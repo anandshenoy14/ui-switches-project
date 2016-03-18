@@ -8,5 +8,12 @@
       "scripts": ["background.js"]
     }
   },
-  "icons": { "16": "calculator-16.png", "128": "calculator-128.png" }
+  "icons": { "16": "switch-16x16.png", "128": "switch-256x256.png" },
+  "permissions": [
+        "https://fonts.googleapis.com/",
+        "notifications",
+        "storage",
+        "videoCapture"
+    ],
+  "content_security_policy":"style-src https://fonts.googleapis.com/;"
 }

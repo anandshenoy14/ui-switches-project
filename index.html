@@ -4,7 +4,7 @@
         eBay UI Opt-In Switches
     </title>
     <head>
-      <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+      <script src="jquery-1.12.0.min.js"></script>
       <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
       <link rel="stylesheet" type="text/css" href="index.less">
       <script src="semantic/dist/semantic.min.js"></script>
@@ -16,18 +16,57 @@
           <p class="instructions">
               Use the switches to opt-in or opt-out.
           </p>
-          <div class="switch">
-                          <label class="switch-label">VI VQ US Prod</label>
-                          <div class="ui toggle checkbox switch-component">
-                            <input type="checkbox" name="public">
-                          </div>
+          <div class="ui styled accordion">
+          	<div class="title">
+          	     <i class="tasks icon">
+                 </i> Load Switches
+          	</div>
+          	<div class="content">
+              <div class="segment">
+                  <!-- file uploader -->
+                      <input id="file" type="file" />
+                      <p>Select a file with the following format.</p>
+                      <pre>
+                      {
+                        "switches" : [
+                        {
+                          "name" : "Some_Name",
+                          "optInUrl" : "url",
+                          "optOutUrl" : "url",
+                          "defaultState" : "optin"
+                        },
+                        {
+                          "name" : "Some_Name_2",
+                          "optInUrl" : "url2",
+                          "optOutUrl" : "url2",
+                          "defaultState" : "optout"
+                        }
+                        ]
+                      }
+                      </pre>
+              </div>
+            </div>
+          	<div class="title">
+          			<i class="settings icon"></i> Access Switches
+          	</div>
+          	<div class="content switchContainer">
+              <div class="switch">
+                <label class="switch-label">VI VQ US Prod</label>
+                  <div class="ui toggle checkbox switch-component">
+                  <input type="checkbox" name="public">
+                </div>
+              </div>
+              <div class="switch">
+                <label class="switch-label">VI VQ UK Prod</label>
+                  <div class="ui toggle checkbox switch-component">
+                  <input type="checkbox" name="public">
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </body>
+    <script src="switch.js"></script>
     <script src="index.js"></script>
-    <script>
-        window.init();
-    </script>
-
 </html>
