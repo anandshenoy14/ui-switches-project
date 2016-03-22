@@ -98,7 +98,6 @@ window.init = function(){
           });
       chrome.storage.sync.get('uiSwitches', function(data) {
                 if(data && data.uiSwitches && data.uiSwitches.length>0){
-                    console.log('here');
                     var newcss = removeDisabled($('.clear').attr('class'));
                     $('.clear').attr('class',newcss);
                 }

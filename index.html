@@ -1,7 +1,6 @@
 <!DOCTYPE>
 <html>
-    <title>
-        eBay UI Opt-In Switches
+    <title>UI Opt-In Switches
     </title>
     <head>
       <script src="jquery-1.12.0.min.js"></script>
@@ -12,9 +11,9 @@
     <body>
       <div class="main">
         <div class="ui raised very padded text container segment">
-          <h2 class="ui header">eBayUI Opt-In Switches</h2>
+          <h2 class="ui header">UI Opt-In Switches</h2>
           <p class="instructions">
-              Use the switches to opt-in or opt-out.
+              Use the switches to opt-in or opt-out of experiences.
           </p>
           <div class="ui styled accordion">
           	<div class="title">
@@ -41,32 +40,13 @@
                         }
                         ]
                       }" data-variation="wide"></i>
-                      <!-- <p>Select a file with the following format.</p> -->
-                      <!-- <pre>
-                      {
-                        "switches" : [
-                        {
-                          "name" : "Some_Name",
-                          "optInUrl" : "url",
-                          "optOutUrl" : "url",
-                          "defaultState" : "optin"
-                        },
-                        {
-                          "name" : "Some_Name_2",
-                          "optInUrl" : "url2",
-                          "optOutUrl" : "url2",
-                          "defaultState" : "optout"
-                        }
-                        ]
-                      }
-                      </pre> -->
               </div>
               <div class="segment actions">
                 <div class="ui buttons">
                   <button class="ui small blue button save" data-content="Save New Switches from File Selected">Save</button>
                   <div class="or"></div>
                   <button class="ui small positive button load" data-content="Load Switches from Saved Settings or Recently Saved">Load</button>
-                  <button class="ui small disabled button clear" data-content="Clear Saved Switches and Save New after editing file">
+                  <button class="ui small disabled red button clear" data-content="Clear Saved Switches and Save New after editing file">
                     <i class="remove icon"></i>
                     Clear
                   </button>
