@@ -25,8 +25,24 @@
               <div class="segment">
                   <!-- file uploader -->
                       <input id="file" type="file" />
-                      <p>Select a file with the following format.</p>
-                      <pre>
+                      <i class="circular info icon link infoLink" data-content="Select a file with the following format {
+                        'switches' : [
+                        {
+                          'name' : 'Some_Name',
+                          'optInUrl' : 'url',
+                          'optOutUrl' : 'url',
+                          'defaultState' : 'optin'
+                        },
+                        {
+                          'name' : 'Some_Name_2',
+                          'optInUrl' : 'url2',
+                          'optOutUrl' : 'url2',
+                          'defaultState' : 'optout'
+                        }
+                        ]
+                      }" data-variation="wide"></i>
+                      <!-- <p>Select a file with the following format.</p> -->
+                      <!-- <pre>
                       {
                         "switches" : [
                         {
@@ -43,14 +59,25 @@
                         }
                         ]
                       }
-                      </pre>
+                      </pre> -->
+              </div>
+              <div class="segment actions">
+                <div class="ui buttons">
+                  <button class="ui small blue button save" data-content="Save New Switches from File Selected">Save</button>
+                  <div class="or"></div>
+                  <button class="ui small positive button load" data-content="Load Switches from Saved Settings or Recently Saved">Load</button>
+                  <button class="ui small disabled button clear" data-content="Clear Saved Switches and Save New after editing file">
+                    <i class="remove icon"></i>
+                    Clear
+                  </button>
+                </div>
               </div>
             </div>
           	<div class="title">
           			<i class="tasks icon"></i> Access Switches
           	</div>
           	<div class="content switchContainer">
-              
+
             </div>
           </div>
         </div>

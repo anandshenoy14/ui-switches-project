@@ -12,8 +12,7 @@
   "permissions": [
         "https://fonts.googleapis.com/",
         "notifications",
-        "storage",
-        "videoCapture"
+        "storage"
     ],
   "content_security_policy":"style-src https://fonts.googleapis.com/;"
 }
