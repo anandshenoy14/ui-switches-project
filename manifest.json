@@ -1,7 +1,7 @@
 {
   "name": "UI Opt-In Switches",
-  "description": "Chrome App for accessing Opt-Ins",
-  "version": "0.1",
+  "description": "Chrome App for easily accessing Opt-In Experiences and saving for future use",
+  "version": "1.0.0",
   "manifest_version": 2,
   "app": {
     "background": {
