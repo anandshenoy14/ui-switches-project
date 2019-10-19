@@ -1,9 +1,4 @@
 var Switch = (function(){
-    var _name;
-    var _optInUrl;
-    var _optOutUrl;
-    var _defaultState;
-    var _index;
     function Switch(n,oin,out,s,i){
       this._name = n;
       this._optInUrl = oin;
